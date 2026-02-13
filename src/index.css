@@ -1,0 +1,88 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2937;
+}
+
+/* Headings */
+h3, h4 {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+/* Panels */
+.panel {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+}
+
+textarea:focus {
+  border-color: #6366f1;
+}
+
+/* Buttons */
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #6366f1;
+  color: white;
+}
+
+button:hover:not(:disabled) {
+  background-color: #4f46e5;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Secondary buttons (versions) */
+.version-btn {
+  background: #f9fafb;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+.version-btn.active {
+  background: #e0e7ff;
+  border-color: #6366f1;
+}
+
+/* Status text */
+.status {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.status.success {
+  color: #16a34a;
+}
+
+.status.error {
+  color: #dc2626;
+}
+
+.status.loading {
+  color: #2563eb;
+}
